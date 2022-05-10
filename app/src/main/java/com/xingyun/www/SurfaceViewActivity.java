@@ -148,7 +148,7 @@ public class SurfaceViewActivity extends AppCompatActivity implements View.OnCli
         @Override
         public void surfaceCreated(SurfaceHolder holder) {
             cam = Camera.open(); // 取得第一个摄像头
-
+            cam.set
 			cam.setDisplayOrientation(90); // 纠正摄像头自动旋转，纠正角度，如果引用，则摄像角度偏差90度
 
             try {
